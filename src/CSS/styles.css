@@ -1,0 +1,251 @@
+@media screen and (max-width: 480px) {
+    body {
+        margin: 0;
+        padding: 0;
+        border: 5px solid #a50a0a;
+        font-family: sans-serif;
+        font-size: larger;
+    }
+    .outer {
+        display: grid;
+        grid-template-rows: repeat(3,auto);
+        align-items: center;
+        justify-items: center;
+        height: 100vh;
+        margin-top: 25px;
+    }
+    .img img {
+        max-width: 100%;
+        height: auto;
+    }
+    .name,
+    .quote,
+    .button {
+        text-align: center;
+    }
+    .name h1 {
+        font-size: 2em;
+        margin-bottom: 0.5em;
+    }
+    
+    button {
+        background-color: #a50a0a;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+    
+    button:hover {
+        background-color: #2980b9;
+    }
+    header {
+        background-color: #a50a0a;
+        color: white;
+        text-align: start;
+        padding: 10px;
+    }
+    
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(4 ,auto);
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    nav li {
+        margin-right: 15px;    
+    }
+    
+    nav a {
+        color: white;
+        font-weight: bold;
+    }
+    nav a:hover{
+        color: #2980b9;
+        text-decoration: none;
+    }
+    main {
+        display: grid;
+        grid-template-rows: auto auto ;
+        padding: 10px;
+        
+    }
+    
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .intro {
+        font-size: 1.3em;
+    }
+    
+    section {
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        gap: 10px;
+        padding: 10px;
+    }
+    .ed{
+        color:#a50a0a;
+        text-align: center;
+        font-size: 2em;
+    
+    }
+    .achievements h2{
+        color:#a50a0a;
+        text-align: center;
+        font-size: 2em;
+    
+    }
+    .Ftball h2{
+        color:#a50a0a;
+        text-align: center;
+        font-size: 2em;
+    
+    }
+    .bball h2{
+        color:#a50a0a;
+        text-align: center;
+        font-size: 2em;
+    
+    }
+    section h2{
+        color:#a50a0a;
+        text-align: center;
+        font-size: 2em;
+    
+    }
+    .Ftball p{
+        font-size: 1.3em;
+    }
+    .bball p{
+        font-size: 1.3em;
+    }
+    video {
+        max-width: 100%;
+        height: auto;
+    }
+    hr {
+        margin: 20px;
+    }
+    
+    footer {
+        background-color: #a50a0a;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+    h3{
+        font-size: 2em;
+    }
+    
+    .photo {
+        font-size: 1.3em;
+    }
+    
+    img.demera,
+    img.sculp,
+    img.view1,
+    img.view2 {
+        max-width: 100%;
+        height: auto;
+        margin: 10px;
+    }
+    ul {
+        list-style: disc;
+        padding: 0;
+    }
+    
+    ul li {
+        margin-bottom: 10px;
+    }
+    
+    .achievements {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    dl {
+        padding: 1em;
+    }
+    
+    dt {
+        padding: 5px;
+        font-weight: bold;
+    }
+    
+    aside {
+        grid-area: aside;
+        background-color: lightcoral;
+        padding: 1em;
+    }
+    
+    aside ul {
+        list-style: disc;
+        padding: 1em;
+    }
+    
+    aside ul li {
+        margin-bottom: 10px;
+    }
+    hr {
+        border: 1px solid #a50a0a;
+        margin: 2em 0;
+    }
+    
+    .online-courses {
+        
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+        gap: 25px;
+        align-items: start;
+    }
+    figure{
+        display:grid;
+        grid-template-columns: repeat(2,auto);
+    }
+    
+    figure img {
+        width: 75%;
+        height: auto;
+    }
+    .copyright{
+        background-color: #a50a0a;
+        color: white;
+        text-align: center; 
+    }
+    main footer{
+        background-color: white;
+        color: black;
+    }
+    .address{
+        display: grid;
+        grid-template-rows: auto auto;
+        justify-content: center;
+    
+    }
+    .address li{
+        margin-top:10px
+    }
+    .address h2{
+        color:#a50a0a;
+    }
+    .social{
+        display: grid;
+        grid-template-rows: auto auto;
+        justify-content: center;
+    
+    }
+    .social li{
+        margin-top:10px
+    }
+    .social{
+        color:#a50a0a;
+    }
+}
