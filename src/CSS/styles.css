@@ -1,0 +1,274 @@
+@media screen and (max-width: 480px) {
+    body {
+        margin: 0;
+        padding: 0;
+        border: 5px solid #a50a0a;
+        font-family: sans-serif;
+        
+        
+    }
+    header {
+        background-color: #a50a0a;
+        color: white;
+        text-align: start;
+        padding: 1em;
+    }
+    
+    .outer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin-top: 10px;
+        font-size: larger;
+    }
+    
+    .img {
+        text-align: center;
+    }
+    
+    .img img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .name {
+        text-align: center;
+    }
+    
+    .name h1 {
+        font-size: 2em;
+        margin-bottom: 0.5em;
+    }
+    
+    .quote {
+        text-align: center;
+        
+    }
+    
+    button {
+        background-color: #a50a0a;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1em;
+        
+    }
+    
+    button:hover {
+        background-color: #2980b9;
+    }
+    
+    .button {
+        margin-top: 1em;
+        text-align: center;
+    }
+    nav {
+        display: flex;
+        justify-content: end;
+        background-color: #a50a0a;
+        padding: 1em;
+        
+    }
+    
+    nav ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        
+    }
+    
+    nav ul li {
+        margin-right: 15px;
+        
+    }
+    
+    nav a {
+        text-decoration: underline;
+        color: white;
+        font-weight: bold;
+    }
+    nav a:hover{
+        text-decoration: none;
+        color: #2980b9;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5em;
+        font-size: larger;
+        
+        
+    }
+    
+    main img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .intro {
+        margin-top: 20px;
+        align-items: center;
+    
+        
+    }
+    
+    .Ftball , .bball {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2em;
+        font-size: larger;
+    }
+    
+    h2{
+        color: #a50a0a;
+    }
+    video {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+    }
+    
+    footer {
+        background-color: #a50a0a;
+        color: white;
+        text-align: center;
+        font-size: larger;
+        padding: 2em;
+    }
+    
+    .photo {
+        margin-top: 20px;
+    }
+    
+    img.demera,
+    img.sculp,
+    img.view1,
+    img.view2 {
+        max-width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+    section{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: larger;
+    }
+    main ul{
+        align-items: center;
+        font-size: 1em;
+    }
+    ul {
+        list-style: disc;
+        padding: 0;
+    }
+    
+    ul li {
+        margin-bottom: 10px;
+    }
+    dl {
+        padding:1em;
+    
+    }
+    
+    dt {
+        padding:5px;
+        font-weight: bold;
+    }
+    aside {
+        background-color: lightcoral;
+        padding: 1em;
+    }
+    
+    aside ul {
+        list-style: disc;
+        padding: 1em;
+    }
+    
+    aside ul li {
+        margin-bottom: 10px;
+    }
+    figure{
+        display: flex;
+        flex-direction: row;
+        gap:25px;
+        align-items: start ;
+    }
+    figure img{
+        max-width:25%;
+        height:auto;
+    }
+    hr {
+        border: 1px solid #a50a0a;
+        margin: 2em 0;
+    }
+    .copyright{
+        display:flex;
+        text-align: center;
+        background-color: #a50a0a;
+        color: white;
+    
+    }
+    main footer{
+        background-color: white;
+        color: black;
+    }
+    .address{
+        display: flex;
+        flex-direction:column ;
+        align-items: center;
+    
+    }
+    
+    .address ul li{
+        padding:0.5em;
+    
+    }
+    .address h2{
+        color:#a50a0a;
+        
+    
+    }
+    
+    .social{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .social ul li{
+        
+        padding: 0.5em;
+    
+    }
+    
+    .social h2{
+        color: #a50a0a;
+    }
+    footer nav ul{
+        display: flex;
+        text-align: end;
+        justify-content: space-evenly;
+        list-style: none;
+    
+    
+    }
+    footer nav li{
+        font-size: medium;
+    }
+    footer a{
+        color: white;
+        font-weight: bold;
+        
+    }
+    footer a:hover{
+        color: #2980b9;
+        text-decoration: none;
+    }
+    
+    
+}
