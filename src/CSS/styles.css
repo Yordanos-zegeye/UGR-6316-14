@@ -1,167 +1,139 @@
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) and (orientation: portrait) {
     body {
         margin: 0;
         padding: 0;
         border: 5px solid #a50a0a;
         font-family: sans-serif;
         
+    }
+    .img {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        text-align: center;
         
+    }
+    .img img{
+        width:100%;
+        height:auto;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        height: 100vh;
+
+    }
+
+    .overlay h1 {
+        font-size: 2em;
+        margin-bottom: 0.5em;
+    }
+
+    .overlay p,
+    .overlay q {
+       margin: 0.5em ;
+    }
+    button {
+        background-color: #a50a0a;
+        color: #fff;
+        border: none;
+        margin-top: 1em;
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+    button:hover {
+        background-color: #2980b9;
     }
     header {
         background-color: #a50a0a;
         color: white;
         text-align: start;
-        padding: 1em;
-    }
-    
-    .outer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        margin-top: 10px;
-        font-size: larger;
-    }
-    
-    .img {
-        text-align: center;
-    }
-    
-    .img img {
-        max-width: 100%;
-        height: auto;
-    }
-    
-    .name {
-        text-align: center;
-    }
-    
-    .name h1 {
-        font-size: 2em;
-        margin-bottom: 0.5em;
-    }
-    
-    .quote {
-        text-align: center;
-        
-    }
-    
-    button {
-        background-color: #a50a0a;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        font-size: 1em;
-        
-    }
-    
-    button:hover {
-        background-color: #2980b9;
-    }
-    
-    .button {
-        margin-top: 1em;
-        text-align: center;
-    }
-    nav {
-        display: flex;
-        justify-content: end;
-        background-color: #a50a0a;
-        padding: 1em;
-        
+        padding: 10px;
     }
     
     nav ul {
-        display: flex;
-        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(4 ,auto);
+        list-style-type: none;
         padding: 0;
-        
+        margin: 0;
     }
-    
-    nav ul li {
-        margin-right: 15px;
-        
+    nav li {
+        margin-right: 15px;    
     }
-    
     nav a {
-        text-decoration: underline;
         color: white;
         font-weight: bold;
     }
     nav a:hover{
-        text-decoration: none;
         color: #2980b9;
+        text-decoration: none;
     }
     main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0.5em;
-        font-size: larger;
-        
-        
+        display: grid;
+        grid-template-rows: auto auto ;
+        padding: 10px;
     }
     
-    main img {
+    img{
         max-width: 100%;
         height: auto;
     }
     
-    .intro {
-        margin-top: 20px;
-        align-items: center;
-    
-        
+    .about__intro {
+        font-size: 1.3em;
     }
     
-    .Ftball , .bball {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 2em;
-        font-size: larger;
+    .about__football , .about__basketball {
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        gap: 10px;
+        padding: 10px;
     }
     
-    h2{
-        color: #a50a0a;
+    .about__football-title, .about__basketball-title{
+        color:#a50a0a;
+        text-align: center;
+        font-size: 2em;
+    
+    }
+    .about__football-text , .about__basketball-text{
+        font-size: 1.3em;
     }
     video {
-        width: 100%;
-        max-width: 600px;
+        max-width: 100%;
         height: auto;
+    }
+    hr {
+        margin: 20px;
     }
     
     footer {
         background-color: #a50a0a;
         color: white;
         text-align: center;
-        font-size: larger;
-        padding: 2em;
+        padding: 20px;
+    }
+    h3{
+        font-size: 2em;
     }
     
-    .photo {
-        margin-top: 20px;
+    .about__photo {
+        font-size: 1.3em;
     }
     
-    img.demera,
-    img.sculp,
-    img.view1,
-    img.view2 {
+    .about__pic-demera,
+    .about__pic-sculpture,
+    .about__pic-view1,
+    .about__pic-view2 {
         max-width: 100%;
         height: auto;
-        margin-top: 10px;
-    }
-    section{
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        font-size: larger;
-    }
-    main ul{
-        align-items: center;
-        font-size: 1em;
+        margin: 10px;
     }
     ul {
         list-style: disc;
@@ -171,16 +143,32 @@
     ul li {
         margin-bottom: 10px;
     }
-    dl {
-        padding:1em;
+    .portfolio__ed,
+    .portfolio__achievements-title{
+        color:#a50a0a;
+        text-align: center;
+        font-size: 2em;
     
+    }
+    .portfolio__achievements {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    dl {
+        padding: 1em;
     }
     
     dt {
-        padding:5px;
+        padding: 5px;
         font-weight: bold;
     }
+    
     aside {
+        grid-area: aside;
         background-color: lightcoral;
         padding: 1em;
     }
@@ -193,82 +181,1038 @@
     aside ul li {
         margin-bottom: 10px;
     }
-    figure{
-        display: flex;
-        flex-direction: row;
-        gap:25px;
-        align-items: start ;
-    }
-    figure img{
-        max-width:25%;
-        height:auto;
-    }
     hr {
         border: 1px solid #a50a0a;
-        margin: 2em 0;
+        margin: 2em;
+    }
+    
+    .portfolio__online{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: larger;
+    }
+    figure{
+        display:grid;
+        grid-template-columns: repeat(2,auto);
+    }
+    
+    figure img {
+        width: 75%;
+        height: auto;
     }
     .copyright{
-        display:flex;
-        text-align: center;
         background-color: #a50a0a;
         color: white;
-    
+        text-align: center; 
     }
     main footer{
         background-color: white;
         color: black;
     }
-    .address{
-        display: flex;
-        flex-direction:column ;
-        align-items: center;
+    .contact__address,
+    .contact__social{
+        display: grid;
+        grid-template-rows: auto auto;
+        justify-content: center;
     
     }
-    
-    .address ul li{
-        padding:0.5em;
-    
+    .contact__address li,
+    .contact__social li{
+        margin-top:10px
     }
-    .address h2{
+    .contact__address-title,
+    .contact__social-title{
         color:#a50a0a;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+        border: 5px solid #a50a0a;
+        font-family: sans-serif;
         
-    
     }
-    
-    .social{
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .social ul li{
+    .img {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        text-align: center;
         
-        padding: 0.5em;
-    
+    }
+    .img img{
+        max-width: 100%;
+        height:auto;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 125%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        height: 100vh;
+
+    }
+
+    .overlay h1 {
+        font-size: 3em;
+        margin-bottom: 0.5em;
+    }
+
+    .overlay p,
+    .overlay q {
+        font-size: 1.3em;
+        margin: 0.5em ;
+    }
+
+    button {
+        background-color: #a50a0a;
+        color: #fff;
+        border: none;
+        margin-top: 1em;
+        padding: 10px 20px;
+        font-size: 1.3em;
+    }
+        
+
+    button:hover {
+        background-color: #2980b9;
+    }
+    button:hover {
+        background-color: #2980b9;
+    }
+    header {
+        background-color: #a50a0a;
+        color: white;
+        text-align: start;
+        padding: 10px;
     }
     
-    .social h2{
-        color: #a50a0a;
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(4 ,auto);
+        list-style-type: none;
+        justify-content: end;
+        padding: 0;
+        margin: 0;
     }
-    footer nav ul{
-        display: flex;
-        text-align: end;
-        justify-content: space-evenly;
-        list-style: none;
     
+    nav li {
+        margin-right: 30px;    
+    }
     
-    }
-    footer nav li{
-        font-size: medium;
-    }
-    footer a{
+    nav a {
         color: white;
         font-weight: bold;
-        
+        font-size: 1.5em;
     }
-    footer a:hover{
+    nav a:hover{
         color: #2980b9;
         text-decoration: none;
     }
+
+    header h2{
+        font-size: 3em;
+    }
+    main {
+        display: grid;
+        grid-template-rows: auto auto ;
+        padding: 10px;
+        
+    }
     
+    .about__image{
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .about__intro {
+        font-size: 2em;
+    }
+    
+    .about__football , .about__basketball{
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        gap: 10px;
+        padding: 10px;
+    }
+    .about__football-title,
+    .about__basketball-title{
+        color:#a50a0a;
+        text-align: center;
+        font-size: 3em;
+    
+    }
+    .about__football-text,
+    .about__basketball-text{
+        font-size: 2em;
+    }
+    video {
+        text-align: center;
+        max-width: 100%;
+        height: auto;
+    }
+    footer {
+        background-color: #a50a0a;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+    h3{
+        font-size: 3em;
+    }
+    
+    .about__photo {
+        font-size: 2em;
+    }
+    .about__pics{
+        margin: 10px;
+        display: flex;
+        gap: 5px;
+    }
+    
+    .about__pic-demera,
+    .about__pic-sculpture,
+    .about__pic-view1,
+    .about__pic-view2{
+
+        max-width: 25%;
+        height: auto;
+        
+    }
+    .portfolio__ed,
+    .portfolio__achievements-title{
+        color:#a50a0a;
+        text-align: center;
+        font-size: 3em;
+    }
+    .portfolio__achievements-list,
+    .portfolio__ed-list{
+        font-size: 2em;
+
+    }
+    .portfolio__achievements {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    ul {
+        list-style: disc;
+        padding: 0;
+    }
+    
+    ul li {
+        margin-bottom: 10px;
+    }
+    dl {
+        padding: 1em;
+    }
+    
+    dt {
+        padding: 5px;
+        font-weight: bold;
+    }
+    
+    aside {
+        grid-area: aside;
+        background-color: lightcoral;
+        padding: 1em;
+    }
+    
+    aside ul {
+        list-style: disc;
+        padding: 1em;
+    }
+
+    
+    
+    .portfolio__online{
+        grid-column: span 3 ;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2,auto);
+        margin: 25px;
+
+    }
+    .portfolio__online-title{
+        grid-column: span 2;
+        font-size: 3em;
+        text-align: center ;
+    }
+    figure{
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+
+    }
+    .portfolio__online img{
+        
+        max-width: 50%;
+        height:auto;
+    }
+    figcaption{
+        align-self:center;
+        font-size: 1.5em;
+    }
+    .blog__title{
+        font-size: 2em;
+    }
+    .blog__text{
+        font-size: 1.5em;
+    }
+    .blog blockquote{
+        font-size: 1.5em;
+    }
+
+    .copyright{
+        background-color: #a50a0a;
+        color: white;
+        text-align: center; 
+        font-size: 1.5em;
+    }
+    main footer{
+        background-color: white;
+        color: black;
+    }
+    .contact{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(3,auto);
+
+    }
+    .contact__header{
+        grid-column: span 2;
+        text-align: center;
+        
+    }
+    .contact__address{
+        grid-column: span 1;
+        font-size: 2em;
+        padding: 10px;
+        border-right: solid 3px #a50a0a;
+
+    }
+    .contact__social{
+
+        grid-column: 2/3;
+        font-size: 2em;
+        padding: 15px;
+        
+    }
+    .contact li{
+        list-style: none;
+    }
+    .contact__footer{
+        grid-column:span 2;
+        
+    }
     
 }
+@media screen and (max-width: 1279px)and (min-width: 769px) {
+    body{
+        margin: 0;
+        padding:0;
+        font-family: sans-serif;
+        
+    }
+   
+    .img {
+        
+        position: relative;
+        text-align: center;
+        
+    }
+    .img img{
+        width: 100%;
+        height:100%;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+       
+
+    }
+
+    .overlay h1 {
+        font-size: 3em;
+        margin-bottom: 0.5em;
+    }
+
+    .overlay p,
+    .overlay q {
+       font-size: 1.7em;
+       margin: 0.5em ;
+    }
+
+    button {
+        background-color: #a50a0a;
+        color: #fff;
+        border: none;
+        margin-top: 1em;
+        padding: 25px 40px;
+        font-size: 1.7em;
+    }
+        
+
+    button:hover {
+        background-color: #2980b9;
+    }
+    header {
+        background-color: #a50a0a;
+        color: white;
+        text-align: start;
+        padding: 10px;
+    }
+    
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(4 ,auto);
+        list-style-type: none;
+        justify-content: end;
+        padding: 0;
+        margin: 0;
+    }
+    
+    nav li {
+        margin-right: 30px;    
+    }
+    
+    nav a {
+        color: white;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    nav a:hover{
+        color: #2980b9;
+        text-decoration: none;
+    }
+
+    .about__title{
+        font-size: 4em;
+    }
+    .about{
+        display:flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        
+    }
+    .about__main{
+        display: flex;
+        flex-direction:row-reverse;
+        margin: 10px;
+
+    }
+    .about__intro{
+        align-self: center;
+        font-size: 1.7em;
+        margin-left: 10px;
+    }
+    .about__image{
+        max-width: 40%;
+        height: auto;
+        margin-right: 25px;
+    }
+    .about__football{
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: auto auto;
+        margin: 25px;
+    }
+    .about__football-title{
+        grid-column: 1/-1;
+        text-align: center;
+        font-size: 3em;
+        color: #a50a0a;
+    }
+    .about__football-text{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        align-self: center;
+        font-size: 1.7em;
+        padding-left: 25px;
+
+    }
+    .about__football-video{
+        grid-column: 1/2;
+        grid-row: 2/-1;
+        width: 100%;
+        height: auto;
+        margin-left: 10px;
+    }
+    .about__basketball{
+        display: grid;
+        grid-template-columns: 75% 25%;
+        grid-template-rows: auto auto;
+        margin: 25px;
+        gap: 25px;
+    }
+    .about__basketball-title{
+        grid-column: 1/-1;
+        text-align: center;
+        font-size: 3em;
+        color: #a50a0a;
+    }
+    .about__basketball-text{
+        grid-column: 1/2;
+        align-self: center;
+        font-size: 1.7em;
+        margin-right: 25px;
+        top:50%;
+
+    }
+    .about__basketball-video{
+        grid-column: 2/3;
+        grid-row: 2/-1;
+        width: 100%;
+        height: auto;
+        margin-right: 25px;
+        
+    }
+    footer{
+        background-color: #a50a0a;
+        color: white;
+
+    }
+    .about__footer{
+        display: flex;
+        flex-direction: column;
+
+       
+    }
+    footer h3{
+        grid-column: 1/-1;
+        font-size: 3em;
+        margin-left: 50px;
+
+    }
+    .about__photo{
+        font-size: 1.7em;
+        margin-left: 100px;
+
+    }
+    
+    .about__pics{
+        display: flex;
+        margin: 20px;
+        gap:5px
+
+    }
+    .about__pic-demera,
+    .about__pic-sculpture,
+    .about__pic-view1,
+    .about__pic-view2{
+        width:25%;
+        height: 400px;
+    }
+    .portfolio{
+        display: grid;
+        grid-template-columns: 3fr 3fr 1fr;
+        grid-template-rows: repeat(4 , auto);
+
+    }
+    .portfolio__header{
+        grid-column: span 3;
+
+    }
+    .portfolio__header-title{
+        font-size: 4em;
+        color: #a50a0a;
+
+    }
+    .portfolio h2{
+        font-size: 2em;
+        color: #a50a0a;
+    }
+    .portfolio__main{
+        font-size: 1em;
+        border-right:solid 3px #a50a0a;
+        margin: 50px;
+    }
+    .portfolio__achievements{
+        font-size: 1em;
+        margin: 50px;
+    }
+    aside{
+        align-self:center;
+        border-left: solid 3px #a50a0a;
+        font-size: 1em;
+        margin: 1em;
+    }
+    aside li{
+        list-style: none;
+    }
+    .portfolio__online img{
+        max-width: 50%;
+        height:auto;
+    }
+    .portfolio__online{
+        grid-column: span 3 ;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2,auto);
+        margin: 50px;
+
+    }
+    .portfolio__online-title{
+        grid-column: span 2;
+        font-size: 3em;
+        text-align: center ;
+    }
+    figure{
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+
+    }
+    figcaption{
+        align-self:center;
+        font-size: 1em;
+    }
+    .portfolio__footer{
+        grid-column: span 3;
+        padding: 1em;
+        font-size: 1em;
+        text-align: center;
+        
+    }
+    footer span{
+        text-align: center;
+    }
+    .blog{
+        display: flex;
+        flex-direction: column;
+    }
+    .blog__title{
+        font-size: 4em;
+    }
+    .blog__main{
+        padding: 3em;
+    }
+    .blog__main-title{
+        font-size: 3em;
+    }
+    .blog__text{
+        font-size: 1em;
+    }
+    main footer{
+        color:black;
+        background-color: white;
+        font-size: 1em;
+        
+    }
+    .blog blockquote{
+        font-size: 1em;
+    }
+    cite{
+        text-align: start;
+        font-weight: normal;
+    }
+    .copyright{
+        font-size: 1em;
+        padding: 1em;
+        text-align: center;
+    }
+    .contact{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(3,auto);
+
+    }
+    .contact__header{
+        grid-column: span 2;
+        text-align: center;
+        
+    }
+    .contact__title{
+        font-size: 3em;
+    }
+    .contact__address{
+        grid-column: span 1;
+        font-size: 1.5em;
+        padding: 3em;
+        border-right: solid 3px #a50a0a;
+    }
+    .contact__social{
+        grid-column: 2/3;
+        font-size: 1.5em;
+        margin: 3em;
+    }
+    .contact__footer{
+        grid-column:span 2;
+        padding:2em
+    }
+}
+@media screen and (min-width:1280px ) {
+    body{
+        margin: 0;
+        padding:0;
+        font-family: sans-serif;
+        
+    }
+   
+    .img {
+        
+        position: relative;
+        text-align: center;
+        
+    }
+    .img img{
+        width: 100%;
+        height:100%;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 150%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+       
+
+    }
+
+    .overlay h1 {
+        font-size: 6em;
+        margin-bottom: 0.5em;
+    }
+
+    .overlay p,
+    .overlay q {
+       font-size: 4em;
+       margin: 0.5em ;
+    }
+
+    button {
+        background-color: #a50a0a;
+        color: #fff;
+        border: none;
+        margin-top: 1em;
+        padding: 50px 75px;
+        font-size: 3em;
+    }
+        
+
+    button:hover {
+        background-color: #2980b9;
+    }
+    header {
+        background-color: #a50a0a;
+        color: white;
+        text-align: start;
+        padding: 10px;
+    }
+    
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(4 ,auto);
+        list-style-type: none;
+        justify-content: end;
+        padding: 0;
+        margin: 0;
+    }
+    
+    nav li {
+        margin-right: 50px;    
+    }
+    
+    nav a {
+        color: white;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    nav a:hover{
+        color: #2980b9;
+        text-decoration: none;
+    }
+
+    .about__title{
+        font-size: 4em;
+    }
+    .about{
+        display:flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        
+    }
+    .about__main{
+        display: flex;
+        flex-direction:row-reverse;
+        margin: 25px;
+
+    }
+    .about__intro{
+        align-self: center;
+        font-size: 2.5em;
+        margin-left: 100px;
+    }
+    .about__image{
+        width: 35%;
+        height: 700px;
+        margin-right: 100px;
+    }
+    .about__football{
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: auto auto;
+        margin: 25px;
+    }
+    .about__football-title{
+        grid-column: 1/-1;
+        text-align: center;
+        font-size: 3em;
+        color: #a50a0a;
+    }
+    .about__football-text{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        align-self: center;
+        font-size: 2.5em;
+        
+
+    }
+    .about__football-video{
+        grid-column: 1/2;
+        grid-row: 2/-1;
+        width: 75%;
+        height: auto;
+        margin-left: 50px;
+    }
+    .about__basketball{
+        display: grid;
+        grid-template-columns: 75% 25%;
+        grid-template-rows: auto auto;
+        margin: 25px;
+        gap: 25px;
+    }
+    .about__basketball-title{
+        grid-column: 1/-1;
+        text-align: center;
+        font-size: 3em;
+        color: #a50a0a;
+    }
+    .about__basketball-text{
+        grid-column: 1/2;
+        align-self: center;
+        font-size: 2.5em;
+        top:50%;
+
+    }
+    .about__basketball-video{
+        grid-column: 2/3;
+        grid-row: 2/-1;
+        width: 75%;
+        height: auto;
+        margin-left: 25px;
+        
+    }
+    footer{
+        background-color: #a50a0a;
+        color: white;
+
+    }
+    .about__footer{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto auto;
+       
+    }
+    footer h3{
+        grid-column: 1/-1;
+        font-size: 3em;
+        margin-left: 50px;
+
+    }
+    .about__photo{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        font-size: 2.5em;
+        align-self: center;
+        justify-self: start;
+        margin-left: 100px;
+
+    }
+    
+    .about__pics{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: repeat(2,400px);
+        grid-template-rows: repeat(2,500px);
+        margin-right: 75px;
+        margin-bottom: 20px;
+        justify-self: end;
+        gap:25px
+
+    }
+    .about__pic-demera,
+    .about__pic-sculpture,
+    .about__pic-view1,
+    .about__pic-view2{
+        width:400px;
+        height:500px;
+    }
+    .portfolio{
+        display: grid;
+        grid-template-columns: 3fr 3fr 1fr;
+        grid-template-rows: repeat(4 , auto);
+
+    }
+    .portfolio__header{
+        grid-column: span 3;
+
+    }
+    .portfolio__header-title{
+        font-size: 4em;
+        color: #a50a0a;
+
+    }
+    .portfolio__achievements-title,
+    .portfolio__ed,
+    .portfolio__online-title{
+        font-size: 3em;
+        color: #a50a0a;
+        
+    }
+    .portfolio__ed{
+        text-align: center;
+    }
+
+    .portfolio__ed-list{
+        font-size: 1.5em;
+        border-right:solid 3px #a50a0a;
+        margin: 50px;
+    }
+    .portfolio__achievements{
+        font-size: 1.5em;
+        margin: 50px;
+    }
+    aside{
+        align-self:center;
+        border-left: solid 3px #a50a0a;
+        font-size: 1.5em;
+        margin: 1em;
+    }
+    aside li{
+        list-style: none;
+    }
+    .portfolio__online img{
+        
+        max-width: 50%;
+        height:auto;
+    }
+    
+    .portfolio__online{
+        grid-column: span 3 ;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2,auto);
+        margin: 50px;
+
+    }
+    .portfolio__online-title{
+        grid-column: span 2;
+        text-align: center ;
+    }
+    figure{
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+
+    }
+    figcaption{
+        align-self:center;
+        font-size: 1.5em;
+    }
+    .portfolio__footer{
+        grid-column: span 3;
+        padding: 1em;
+        font-size: 1.5em;
+        text-align: center;
+        
+    }
+    footer span{
+        text-align: center;
+    }
+    .blog{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .blog__main{
+        padding: 3em;
+    }
+    .blog__title{
+        font-size: 4em;
+    }
+    .blog__text{
+        font-size: 1em;
+    }
+    main footer{
+        color:black;
+        background-color: white;
+        font-size: 1em;
+        
+    }
+    cite{
+        text-align: start;
+        font-weight: normal;
+    }
+    .copyright{
+        font-size: 1em;
+        padding: 1em;
+        text-align: center;
+    }
+    .contact{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(3,auto);
+
+    }
+    .contact__header{
+        grid-column: span 2;
+        text-align: center;
+        
+    }
+    .contact__title{
+        font-size: 4em;
+    }
+    .contact__social-title,
+    .contact__address-title{
+        font-size: 2em;
+        color:#a50a0a
+    }
+    .contact__address{
+        grid-column: span 1;
+        font-size: 2em;
+        padding: 3em;
+        border-right: solid 3px #a50a0a;
+    }
+
+    .contact__social{
+        grid-column: 2/3;
+        font-size: 2em;
+        margin: 3em;
+    }
+    .contact__footer{
+        grid-column:span 2;
+        padding:2em
+    }
+}
+
+    
+        
+
