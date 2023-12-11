@@ -7,77 +7,72 @@
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="home.html" title="home">Home</a></li>
-                <li><a href="about.html" title="about">About</a></li>
-                <li><a href="blog.html" title="blog">Blog</a></li>
-                <li><a href="contact.html" title="contact">Contact</a></li>
-    
+    <div class="portfolio">
+        <header class="portfolio__header">
+            <nav class="portfolio__nav">
+                <ul class="portfolio__nav-list">
+                    <li class="portfolio__nav-item"><a href="home.html" class="portfolio__nav-link">Home</a></li>
+                    <li class="portfolio__nav-item"><a href="about.html" class="portfolio__nav-link">About</a></li>
+                    <li class="portfolio__nav-item"><a href="blog.html" class="portfolio__nav-link">Blog</a></li>
+                    <li class="portfolio__nav-item"><a href="contact.html" class="portfolio__nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <h1 class="portfolio__title">Portfolio</h1>
+        </header>
+         <main class="portfolio__main">
+            <h2 class="portfolio__ed">Education</h2>
+            <ul class="portfolio__ed-list">
+                <li>From kindergarten to 2<sup>nd</sup> grade in SOS school bahirdar</li>
+                <li>From 2<sup>nd</sup> grade until graduation St. Joseph School Addis Ababa</li>
+                <li>Graduated with a distinguishing grade of 4.0 GPA</li>
+                <li>Currently studying Software Engineering at AAiT </li>
             </ul>
-        </nav>
-        <h1>Portfolio</h1>
-
-    </header>
-    <main>
-        <h2 class="ed">Education</h2>
-        <ul>
-            <li>From kindergarten to 2<sup>nd</sup> grade in SOS school bahirdar</li>
-            <li>From 2<sup>nd</sup> grade until graduation St. Joseph School Addis Ababa</li>
-            <li>Graduated with a distinguishing grade of 4.0 GPA</li>
-            <li>Currently studying Software Engineering at AAiT </li>
-
-        </ul>
-    </main>
-    
-    <section class="achievements">
-        <h2>Achievements</h2>
-        <dl>
-            <dt>Certificates</dt>
-            <dd>Certificate of Merit for every semester at highschool.</dd>
-            <dd>Redhat certificate for successfuly completing the online course.</dd>
-            <dt>Languages</dt>
-            <dd>Amharic</dd>
-            <dd>English</dd>
-            <dt>Programming Languages </dt>
-            <dd>Python---<em>Intermediate</em></dd>
-            <dd>Java---<em>Beginner</em></dd>
-            <dd>SQL---<em>Beginner</em></dd>
-            <dd>HTML---<em>Beginner</em></dd>
-            <dd>CSS---<em>Begineer</em></dd>
-        </dl>
+        </main>
         
+        <section class="portfolio__achievements">
+            <h2 class="portfolio__achievements-title">Achievements</h2>
+            <dl class="portfolio__achievements-list">
+                <dt class="portfolio__achievements-category">Certificates</dt>
+                <dd class="portfolio__achievements-item">Certificate of Merit for every semester at high school.</dd>
+                <dd class="portfolio__achievements-item">Redhat certificate for successfully completing the online course.</dd>
+                <dt class="portfolio__achievements-category">Languages</dt>
+                <dd class="portfolio__achievements-item">Amharic</dd>
+                <dd class="portfolio__achievements-item">English</dd>
+                <dt class="portfolio__achievements-category">Programming Languages </dt>
+                <dd class="portfolio__achievements-item">Python---<em>Intermediate</em></dd>
+                <dd class="portfolio__achievements-item">Java---<em>Beginner</em></dd>
+                <dd class="portfolio__achievements-item">SQL---<em>Beginner</em></dd>
+                <dd class="portfolio__achievements-item">HTML---<em>Beginner</em></dd>
+                <dd class="portfolio__achievements-item">CSS---<em>Begineer</em></dd>
+            </dl>
+        </section>
+        <aside class="portfolio__aside">
+            <ul class="portfolio__aside-list">
+                <li class="portfolio__aside-item"><a href="images/Yordanos_Resume.pdf" class="portfolio__aside-link">Resume</a></li>
+                <li class="portfolio__aside-item"><a href="https://www.linkedin.com/in/yordanos-zegeye-a42689203/" class="portfolio__aside-link">Linkedin</a></li>
+            </ul>
+        </aside>
 
-    </section>
-    <aside>
-        <ul>
-            <li><a href="images/Yordanos_Resume.pdf">Resume</a></li>
-            <li><a href="https://www.linkedin.com/in/yordanos-zegeye-a42689203/">Linkedin</a></li>
-        </ul>
-    </aside>
-    <hr />
-    <section>
-        <h2>Online cources</h2>
-        <figure class="vm1">
-            <img class="vm_img1" src="images/vmware_cert.1.jpg" alt="Cloud and Virtualization Concepts"/>
-            <figcaption><a href="https://www.credly.com/badges/1e7de38a-e7e0-499a-867e-4a2a7336fe70/public_url">Cloud and Virtualization Concepts</a></figcaption>
-            
-        </figure>
-        <figure class="vm2">
-            <img class="vm_img2" src="images/vmware_cert.2.jpg" alt="Network Virtualization Concepts"/>
-            <figcaption><a href="https://www.credly.com/badges/cb8210a1-446a-47f2-ad22-941148e52007/public_url">Network Virtualization Concepts</a>
-            </figcaption>
-
-        </figure>
-        <figure class="vm3">
-            <img class="vm_img3" src="images/vmware_cert.3.jpg" alt="Software Defined Storge Concepts"/>
-            <figcaption><a href="https://www.credly.com/badges/2d7e2b10-576c-4041-9727-5bcb96c665c4/public_url">Software Defined Storge Concepts</a></figcaption>
-        </figure>
-    </section>
-    <hr />
-    <footer>
-        <span>&copy; Copyright 2023 Yordanos's Portfolio Page </span>
-    </footer>
+        <hr />
+        <section class="portfolio__online">
+            <h2 class="portfolio__online-title">Online courses</h2>
+            <figure class="portfolio__vm1">
+                <img class="portfolio__vm-img1" src="images/vmware_cert.1.jpg" alt="Cloud and Virtualization Concepts"/>
+                <figcaption class="portfolio__vm-caption"><a href="https://www.credly.com/badges/1e7de38a-e7e0-499a-867e-4a2a7336fe70/public_url" class="portfolio__vm-link">Cloud and Virtualization Concepts</a></figcaption>
+            </figure>
+            <figure class="portfolio__vm2">
+                <img class="portfolio__vm-img2" src="images/vmware_cert.2.jpg" alt="Network Virtualization Concepts"/>
+                <figcaption class="portfolio__vm-caption"><a href="https://www.credly.com/badges/cb8210a1-446a-47f2-ad22-941148e52007/public_url" class="portfolio__vm-link">Network Virtualization Concepts</a></figcaption>
+            </figure>
+            <figure class="portfolio__vm3">
+                <img class="portfolio__vm-img3" src="images/vmware_cert.3.jpg" alt="Software Defined Storage Concepts"/>
+                <figcaption class="portfolio__vm-caption"><a href="https://www.credly.com/badges/2d7e2b10-576c-4041-9727-5bcb96c665c4/public_url" class="portfolio__vm-link">Software Defined Storage Concepts</a></figcaption>
+            </figure>
+        </section>
+        <hr />
+        <footer class="portfolio__footer">
+            <span class="portfolio__copyright">&copy; Copyright 2023 Yordanos's Portfolio Page </span>
+        </footer>
+    </div>
 </body>
 </html>
