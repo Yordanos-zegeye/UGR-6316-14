@@ -4,79 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    
+    <style>
+       .hero-head{
+            background-color: #a50a0a;
+        }
+        .left{
+            display: flex;
+            justify-content: flex-end;
+            text-decoration: underline;
+        }
+        .header{
+            color: #a50a0a;
+        }
+        .flex{
+            display: flex;
+            gap:5px;
+            
+        }
+        
+        .aside , .ed{
+           align-self: center;
+        }
+        .footer{
+            background-color: #a50a0a;
+            text-align: center;
+            color: white;
+            padding: 1em;
+        }
+        @media screen and (max-width:769px){
+            .aside{
+                background-color: lightcoral;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="home.html" title="home">Home</a></li>
-                <li><a href="about.html" title="about">About</a></li>
-                <li><a href="blog.html" title="blog">Blog</a></li>
-                <li><a href="contact.html" title="contact">Contact</a></li>
-    
-            </ul>
-        </nav>
-        <h1>Portfolio</h1>
+    <nav class="hero-head">
+        <div class="columns is-mobile is-marginless">
+            <div class="column left">
+                <a href="home.html" class="navbar-item has-text-white">Home</a>
+                <a href="about.html" class="navbar-item has-text-white">About Me</a>
+                <a href="blog.html" class="navbar-item has-text-white">Blog</a>
+                <a href="contact.html" class="navbar-item has-text-white">Contact</a>
+            </div>
+        </div>
+        <div class="columns is-mobile is is-marginless">
+            <div class="column portfolio">
+                <h1 class="title has-text-white">Portfolio</h1>
+            </div>
+        </div>
+    </nav>
+    <section class="section">
+        <div class="container">
+            <div class="columns is-variable">
+                <div class="column  ed">
+                    <h1 class="title header">Education</h1>
+                    <ul>
+                        <li>From kindergarten to 2<sup>nd</sup> grade in SOS school bahirdar</li>
+                        <li>From 2<sup>nd</sup> grade until graduation St. Joseph School Addis Ababa</li>
+                        <li>Graduated with a distinguishing grade of 4.0 GPA</li>
+                        <li>Currently studying Software Engineering at AAiT </li>
 
-    </header>
-    <main>
-        <h2 class="ed">Education</h2>
-        <ul>
-            <li>From kindergarten to 2<sup>nd</sup> grade in SOS school bahirdar</li>
-            <li>From 2<sup>nd</sup> grade until graduation St. Joseph School Addis Ababa</li>
-            <li>Graduated with a distinguishing grade of 4.0 GPA</li>
-            <li>Currently studying Software Engineering at AAiT </li>
-
-        </ul>
-    </main>
-    
-    <section class="achievements">
-        <h2>Achievements</h2>
-        <dl>
-            <dt>Certificates</dt>
-            <dd>Certificate of Merit for every semester at highschool.</dd>
-            <dd>Redhat certificate for successfuly completing the online course.</dd>
-            <dt>Languages</dt>
-            <dd>Amharic</dd>
-            <dd>English</dd>
-            <dt>Programming Languages </dt>
-            <dd>Python---<em>Intermediate</em></dd>
-            <dd>Java---<em>Beginner</em></dd>
-            <dd>SQL---<em>Beginner</em></dd>
-            <dd>HTML---<em>Beginner</em></dd>
-            <dd>CSS---<em>Begineer</em></dd>
-        </dl>
-        
-
+                    </ul>
+                </div>
+                <div class="column is-6">
+                    <h1 class="title header">Achievements</h1>
+                    <dl>
+                        <dt class="title is-5">Certificates</dt>
+                        <dd >Certificate of Merit for every semester at highschool.</dd>
+                        <dd >Redhat certificate for successfuly completing the online course.</dd>
+                        <dt class="title is-5">Languages</dt>
+                        <dd >Amharic</dd>
+                        <dd >English</dd>
+                        <dt class="title is-5">Programming Languages </dt>
+                        <dd >Python---<em>Intermediate</em></dd>
+                        <dd >Java---<em>Beginner</em></dd>
+                        <dd >SQL---<em>Beginner</em></dd>
+                        <dd >HTML---<em>Beginner</em></dd>
+                        <dd >CSS---<em>Begineer</em></dd>
+                    </dl>
+                </div>
+                <div class="column aside is-1">
+                    <ul>
+                        <li><a href="images/Yordanos_Resume.pdf">Resume</a></li>
+                        <li><a href="https://www.linkedin.com/in/yordanos-zegeye-a42689203/">Linkedin</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
-    <aside>
-        <ul>
-            <li><a href="images/Yordanos_Resume.pdf">Resume</a></li>
-            <li><a href="https://www.linkedin.com/in/yordanos-zegeye-a42689203/">Linkedin</a></li>
-        </ul>
-    </aside>
-    <hr />
-    <section>
-        <h2>Online cources</h2>
-        <figure class="vm1">
-            <img class="vm_img1" src="images/vmware_cert.1.jpg" alt="Cloud and Virtualization Concepts"/>
-            <figcaption><a href="https://www.credly.com/badges/1e7de38a-e7e0-499a-867e-4a2a7336fe70/public_url">Cloud and Virtualization Concepts</a></figcaption>
-            
-        </figure>
-        <figure class="vm2">
-            <img class="vm_img2" src="images/vmware_cert.2.jpg" alt="Network Virtualization Concepts"/>
-            <figcaption><a href="https://www.credly.com/badges/cb8210a1-446a-47f2-ad22-941148e52007/public_url">Network Virtualization Concepts</a>
-            </figcaption>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column ">
+                    <figure class="image is-128x128 flex">
+                        <img class="vm_img1" src="images/vmware_cert.1.jpg" alt="Cloud and Virtualization Concepts"/>   
+                        <figcaption><a href="https://www.credly.com/badges/1e7de38a-e7e0-499a-867e-4a2a7336fe70/public_url">Cloud and Virtualization Concepts</a></figcaption>
+                    </figure>
+                            
+                </div>
+                <div class="column">
+                    <figure class="image is-128x128 flex">
+                        <img class="vm_img2" src="images/vmware_cert.2.jpg" alt="Network Virtualization Concepts"/>
+                        <figcaption><a href="https://www.credly.com/badges/cb8210a1-446a-47f2-ad22-941148e52007/public_url">Network Virtualization Concepts</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <figure class="image is-128x128 flex">
+                        <img class="vm_img3" src="images/vmware_cert.3.jpg" alt="Software Defined Storge Concepts"/>
+                        <figcaption><a href="https://www.credly.com/badges/2d7e2b10-576c-4041-9727-5bcb96c665c4/public_url">Software Defined Storge Concepts</a></figcaption>
 
-        </figure>
-        <figure class="vm3">
-            <img class="vm_img3" src="images/vmware_cert.3.jpg" alt="Software Defined Storge Concepts"/>
-            <figcaption><a href="https://www.credly.com/badges/2d7e2b10-576c-4041-9727-5bcb96c665c4/public_url">Software Defined Storge Concepts</a></figcaption>
-        </figure>
+                    </figure>
+                </div>
+            </div>
+
+        </div>
     </section>
-    <hr />
-    <footer>
-        <span>&copy; Copyright 2023 Yordanos's Portfolio Page </span>
-    </footer>
+    <section class="section footer">
+        <div class="container">
+            <span>&copy; Copyright 2023 Yordanos's Portfolio Page </span>
+        </div>
+    </section>
+
 </body>
 </html>
