@@ -4,30 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <style>
+        .hero{
+            background: url(images/home.jpg) center / cover;
+            
+        }
+        .button{
+            background-color: #a50a0a;
+            color:white;
+            
+        }
+    </style>
+    <script>
+        function navToLink(){
+            let link = "about.html";
+            window.location.href = link;
+
+        }
+    </script>
 </head>
 <body>
-    <div class="imge">
-        <img src="images/home.jpg" />
+    <section class="hero is-fullheight">
+ 
+    </section>
+    <div class="is-overlay has-text-centered" style ="top: 25px">
+        <div class="hero-body">
+            <h1 class="title has-text-white">YORDANOS ZEGEYE</h1>
+            <p class="subtitle has-text-white is-size">Hi, this is my personal website; and i hope you enjoy your stay here!</p>
+            <q class="subtitle has-text-white">I know i not the best, but i certainly do know i will be one!</q>
+        </div>
+        <button class="button" onclick="navToLink()">Read More</button>
     </div>
-    
-    <div class="outer">
-        <div class="name">
-            <h1>YORDANOS ZEGEYE</h1>
-            <p>Hi, this is my personal website; and i hope you enjoy your stay here!</p>
-        </div>
-        <div class="quote">
-            <q>I know i not the best, but i certainly do know i will be one!</q>
-
-        </div>
-        <div class="button">
-            <a href="about.html">
-                <button type="button">Read More</button>
-            </a>
-            
-        </div>
-    </div>
-    
-    
     
 </body>
 </html>
