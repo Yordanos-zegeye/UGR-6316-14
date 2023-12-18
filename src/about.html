@@ -4,73 +4,157 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <style>
+        .center{
+            align-items: center;
+            justify-content: center;
+        }
+        .left{
+            display: flex;
+            justify-content: flex-end;
+            text-decoration: underline;
+        }
+        .header{
+            color: #a50a0a;
+        }
+        .hero-head{
+            background-color: #a50a0a;
+        }
+        
+        .footer{
+            background-color: #a50a0a;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2,200px);
+            grid-template-rows: repeat(2,250px);
+            margin-bottom: 25px;
+            justify-content: center;
+            gap: 5px;
+            
+        }
+        hr{
+            color: #a50a0a;
+            border: solid 1px;
+        }
+        @media  screen and (max-width: 480px) {
+            .grid{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 5px;
+            }
+
+            
+        }
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+            .grid{
+                display: flex;
+                flex-direction: row;
+                gap: 5px;
+            }
+        }
+
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-        
-                <li><a href="home.html" title="home">Home</a></li>
-                <li><a href="portfolio.html" title="portfolio">Portfolio</a></li>
-                <li><a href="blog.html" title="blog">Blog</a></li>
-                <li><a href="contact.html" title="contact">Contact</a></li>
-    
-            
-            </ul>
-        </nav>
-        <h1>About Me</h1>
-    </header>
-    <main>
-        <img src="images/childhood.jpg" alt="childhood picture"/>
-        <div class="intro">
-            <p>My name is Yordanos Zegeye.<br /> 
-                I'm named after the holiest river in the world located in Jerusalem. Industrious,enjoyabel and athletic, these three words describe me more that any other words or sentences. I was born in a city called Bahirdar but spent most of my life in Addis. I am a 3<sup>rd</sup> year Software Enginnering student at AAiT, just like i used to wish when i was a kid.<br />
-                Down I have tried to tell something about my hobbies.
-             </p>
-        </div>   
-    </main>
-    <section class="Ftball">
-        <h2>Football</h2>
-        <video class="football_vid" controls>
-            <source src="images/football.MP4" type="video/mp4"/>
-        </video> 
-        <div class="football">
-            <p>As any kid who grew up in Ethiopia i am deeply affiliated to football. It is the one of the best activities i prefer to do during my lesiure time.
-                I usually play as a striker and as a midfielder. Football has taught me alot in life; i have learnt team-work, how to wisely handel both my success and failure and many other lessons.
-            </p>
+    <nav class="hero-head">
+        <div class="columns is-mobile is-marginless">
+            <div class="column left">
+                <a href="home.html" class="navbar-item has-text-white">Home</a>
+                <a href="portfolio.html" class="navbar-item has-text-white">Portfolio</a>
+                <a href="blog.html" class="navbar-item has-text-white">Blog</a>
+                <a href="contact.html" class="navbar-item has-text-white">Contact</a>
+            </div>
         </div>
-
+        <div class="columns is-mobile is is-marginless">
+            <div class="column about">
+                <h1 class="title has-text-white">About Me</h1>
+            </div>
+        </div>
+    </nav>
+    <section class="section">
+        <div class="container">
+            <div class="columns center">
+                <div class="column ">
+                    <p>My name is Yordanos Zegeye.<br /> 
+                        I'm named after the holiest river in the world located in Jerusalem. Industrious,enjoyabel and athletic, these three words describe me more that any other words or sentences. I was born in a city called Bahirdar but spent most of my life in Addis. I am a 3<sup>rd</sup> year Software Enginnering student at AAiT, just like i used to wish when i was a kid.<br />
+                        Down I have tried to tell something about my hobbies.
+                     </p>
+                    
+                </div>
+                <div class="column">
+                    <figure class="image is-square">
+                        <img src="images/childhood.jpg">
+                    </figure>
+                </div>
+            </div>
         
+        </div>
     </section>
-    <section class="bball">
-        <h2>Basketball</h2>
-        <video class="basketball_vid" controls>
-            <source src="images/basketball.mp4" type="video/mp4"/>
-        </video> 
-        <div class="basketball">
-            <p> I have finished highschool in St. Joseph School Addis Ababa. And as an SJS student it is nearly impossible not to play basketball during ur stay at the school. I started playing basketball while i joined the junior school and developed it through out the whole highschool years.Eventhough i don't have the averahe height of a basketball player, i really do enjoy playing the game. And it is will always be one of my favourite hobbies. </p>
+    <section class="section">
+        <div class="container">
+            <div class="columns center">
+                <div class="column">
+                    <h1 class="title header">Football</h1>
+                    <p>As any kid who grew up in Ethiopia i am deeply affiliated to football. It is the one of the best activities i prefer to do during my lesiure time.
+                        I usually play as a striker and as a midfielder. Football has taught me alot in life; i have learnt team-work, how to wisely handel both my success and failure and many other lessons.
+                    </p>
+                </div>
+                <div class="column">
+                    <figure class="image">
+                        <video class="football_vid" controls style="max-width: 75%; height: 75%;">
+                            <source src="images/football.MP4" type="video/mp4"/>
+                        </video> 
+                    </figure>
+                </div>
+            </div>
         </div>
-
     </section>
-    <hr />
-    <footer>
-        <h3>Photography</h3>
-        
-        <div class="photo">
-            <p>I love saving the moments in any way i can. And thankfully photographs are by far the best method ever. Even though i'm not a professional photographer i take some pictures that are sometimes found very pleasant by my friends. And i would like to share them with you here.</p>    
+    <hr>
+    <section class="section">
+        <div class="container">
+            <div class="columns center">
+                <div class="column">
+                    <figure class="image">
+                        <video class="basketball_vid" controls style="width: 75%; height: 50%;">
+                            <source src="images/basketball.mp4" type="video/mp4"/>
+                        </video> 
+                    </figure>
+                </div>
+                <div class="column">
+                    <h1 class="title header">Basketball</h1>
+                    <p> I have finished highschool in St. Joseph School Addis Ababa. And as an SJS student it is nearly impossible not to play basketball during ur stay at the school. I started playing basketball while i joined the junior school and developed it through out the whole highschool years.Eventhough i don't have the averahe height of a basketball player, i really do enjoy playing the game. And it is will always be one of my favourite hobbies. </p>
+                    
+                </div>
+
+            </div>
         </div>
-
-        <img class="demera" src="images/demera.jpg" alt="Demera"/>
-        <img class="sculp" src="images/art.jpg" alt="Sculpture"/>
-        <img class="view1" src="images/view.jpg" alt="sunset"/>
-        <img class="view2" src="images/view2.jpg" alt="sunset"/>
-
-
-
-    </footer>
-
-
-    
-    
+    </section>
+    <section class="section footer">
+        <div class="container">
+            <div class="columns center">
+                <div class="column">
+                    <h1 class="title has-text-white">Photography</h1>
+                    <p class="has-text-white">I love saving the moments in any way i can. And thankfully photographs are by far the best method ever. Even though i'm not a professional photographer i take some pictures that are sometimes found very pleasant by my friends. And i would like to share them with you here.</p>
+                </div>
+                <div class="column grid">
+                    <figure class="image">
+                        <img class="demera" src="images/demera.jpg"style="height: 250px;width: 200px;" alt="Demera"/>
+                    </figure>
+                    <figure class="image ">
+                        <img class="sculp" src="images/art.jpg" style="height: 250px;width: 200px;"alt="Sculpture"/>                    </figure>
+                    <figure class="image ">
+                        <img class="view1" src="images/view.jpg"style="height: 250px;width: 200px;"alt="sunset"/>
+                    </figure>
+                    <figure class="image ">
+                        <img class="view2" src="images/view2.jpg" style="height: 250px;width: 200px;"alt="sunset"/>
+                    </figure>
+                                                            
+                </div>
+            </div>
+        </div>
+    </section>    
 </body>
 </html>
