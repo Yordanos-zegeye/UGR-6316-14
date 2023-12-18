@@ -3,42 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contacts</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <style>
+        .hero{
+            background-color: #a50a0a;
+            
+        }
+        .hero-head{
+            
+            text-align: center;
+        }
+        .header{
+            color: #a50a0a;
+        }
+        .left{
+            display: flex;
+            justify-content: flex-end;
+            text-decoration: underline;
+        }
+    
+        .footer{
+            background-color: #a50a0a;
+            text-align: center;
+            color: white;
+            padding: 0;
+        }
+    </style>
+    
 </head>
 <body>
-    <header>
-        <h1>Contacts</h1>
-
-    </header>
-    <div class="address">
-        <h2>Address</h2>
-        <ul>
-            <li>Email: <a href="mailto:yordanoszegeye24@gmail.com">yordanoszegeye24@gmail.com</a> </li>
-            <li>Tel: <a href="#">0970415771</a></li>
-            <li><a href="https://github.com/Yordanos-zegeye">Github</a></li>
-        </ul>
-
-    </div>
-    <div class="social">
-        <h2>Social</h2>
-        <ul>
-            <li><a href="https://www.instagram.com/jordanzeg/">Instagram</a></li>
-            <li><a href="https://www.facebook.com/jordanzeg/">Facebook</a></li>
-        </ul>
-
-
-    </div>
-    <hr />
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="home.html" title="home">Home</a></li>
-                <li><a href="about.html" title="about">About</a></li>
-                <li><a href="portfolio.html" title="portfolio">Portfolio</a></li>
-                <li><a href="blog.html" title="blog">Blog</a></li>
+    <section class="hero">
+        <div class="hero-head">
+            <h1 class="title has-text-white">Contacts </h1>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <h1 class="title header">Address</h1>
+                    <ul>
+                        <li>Email: <a href="mailto:yordanoszegeye24@gmail.com">yordanoszegeye24@gmail.com</a> </li>
+                        <li>Tel: <a href="#">0970415771</a></li>
+                        <li><a href="https://github.com/Yordanos-zegeye">Github</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h1 class="title header">Social</h1>
+                    <ul>
+                        <li><a href="https://www.instagram.com/jordanzeg/">Instagram</a></li>
+                        <li><a href="https://www.facebook.com/jordanzeg/">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section footer">
+        <div class="container">
+            <nav class="hero-body">
+                <div class="columns is-mobile is-marginless">
+                    <div class="column left">
+                        <a href="home.html" class="navbar-item has-text-white">Home</a>
+                        <a href="about.html" class="navbar-item has-text-white">About Me</a>
+                        <a href="portfolio.html" class="navbar-item has-text-white">Portfolio</a>
+                        <a href="blog.html" class="navbar-item has-text-white">Blog</a>
+                        
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
     
-            </ul>
-        </nav>
-    </footer>
+    
 </body>
 </html>
