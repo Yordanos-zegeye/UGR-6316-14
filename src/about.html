@@ -1,76 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-        
-                <li><a href="home.html" title="home">Home</a></li>
-                <li><a href="portfolio.html" title="portfolio">Portfolio</a></li>
-                <li><a href="blog.html" title="blog">Blog</a></li>
-                <li><a href="contact.html" title="contact">Contact</a></li>
-    
+
+    <link rel="stylesheet" href="output.css">
+    <style>
+
+        .header{
+            color: #a50a0a;
+        }
+        .hero-head,.footer{
+            background-color: #a50a0a;
+        }
+
+        .grid {
+
+            grid-template-columns: repeat(2,200px);
+            grid-template-rows: repeat(2,250px);
+            margin-bottom: 25px;
+            justify-content: center;
             
-            </ul>
-        </nav>
-        <h1>About Me</h1>
-    </header>
-    <main>
-        <img src="images/childhood.jpg" alt="childhood picture"/>
-        <div class="intro">
-            <p>My name is Yordanos Zegeye.<br /> 
-                I'm named after the holiest river in the world located in Jerusalem. Industrious,enjoyabel and athletic, these three words describe me more that any other words or sentences. I was born in a city called Bahirdar but spent most of my life in Addis. I am a 3<sup>rd</sup> year Software Enginnering student at AAiT, just like i used to wish when i was a kid.<br />
-                Down I have tried to tell something about my hobbies.
-             </p>
-        </div>   
-    </main>
-    <section class="Ftball">
-        <h2>Football</h2>
-        <video class="football_vid" controls>
-            <source src="images/football.MP4" type="video/mp4"/>
-        </video> 
-        <div class="football">
-            <p>As any kid who grew up in Ethiopia i am deeply affiliated to football. It is the one of the best activities i prefer to do during my lesiure time.
-                I usually play as a striker and as a midfielder. Football has taught me alot in life; i have learnt team-work, how to wisely handel both my success and failure and many other lessons.
-            </p>
-        </div>
+            
+        }
 
-        
+        @media  screen and (max-width: 480px) {
+            .grid{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 5px;
+            }
+
+            
+        }
+
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <div class="hero-head shadow-md mb-5">
+        <div class="flex justify-between items-center p-4">
+            <div class="about">
+                <h1 class="text-white text-2xl font-bold">About Me</h1>
+            </div>
+            <div class="left">
+                <a href="home.html" class="hover:text-decoration-line: none text-decoration-line: underline hover:text-blue-200 text-white">Home</a>
+                <a href="portfolio.html" class="hover:text-decoration-line: none text-decoration-line: underline hover:text-blue-200 text-white ml-4">Portfolio</a>
+                <a href="blog.html" class="hover:text-decoration-line: none text-decoration-line: underline hover:text-blue-200 text-white ml-4">Blog</a>
+                <a href="contact.html" class="hover:text-decoration-line: none text-decoration-line: underline hover:text-blue-200 text-white ml-4">Contact</a>
+            </div>
+            
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class=" content sm:flex items-center justify-center mt:5">
+                <div class="w-full md:w-1/2 p-5">
+                    <p class="mb-4">My name is Yordanos Zegeye.<br />
+                        I'm named after the holiest river in the world located in Jerusalem. Industrious, enjoyable,
+                        and athletic, these three words describe me more than any other words or sentences. I was born
+                        in a city called Bahirdar but spent most of my life in Addis. I am a 3<sup>rd</sup> year
+                        Software Engineering student at AAiT, just like I used to wish when I was a kid.<br />
+                        Down I have tried to tell something about my hobbies.
+                    </p>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <figure class="w-full">
+                        <img src="images/childhood.jpg" alt="Childhood Image">
+                    </figure>
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="bball">
-        <h2>Basketball</h2>
-        <video class="basketball_vid" controls>
-            <source src="images/basketball.mp4" type="video/mp4"/>
-        </video> 
-        <div class="basketball">
-            <p> I have finished highschool in St. Joseph School Addis Ababa. And as an SJS student it is nearly impossible not to play basketball during ur stay at the school. I started playing basketball while i joined the junior school and developed it through out the whole highschool years.Eventhough i don't have the averahe height of a basketball player, i really do enjoy playing the game. And it is will always be one of my favourite hobbies. </p>
-        </div>
 
+    <section class="section">
+        <div class="container">
+            <div class="content sm:flex items-center justify-center mt-5 p-5">
+                <div class="w-full md:w-1/2">
+                    <h1 class="title header mb-4 text-2xl font-bold">Football</h1>
+                    <p class="mb-4">As any kid who grew up in Ethiopia, I am deeply affiliated with football. It is one
+                        of the best activities I prefer to do during my leisure time. I usually play as a striker and as
+                        a midfielder. Football has taught me a lot in life; I have learned teamwork, how to wisely
+                        handle both my success and failure, and many other lessons.
+                    </p>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <figure class="w-full">
+                        <video class="football_vid" controls style="max-width: 75%; height: 75%;">
+                            <source src="images/football.MP4" type="video/mp4" />
+                        </video>
+                    </figure>
+                </div>
+            </div>
+        </div>
     </section>
-    <hr />
-    <footer>
-        <h3>Photography</h3>
-        
-        <div class="photo">
-            <p>I love saving the moments in any way i can. And thankfully photographs are by far the best method ever. Even though i'm not a professional photographer i take some pictures that are sometimes found very pleasant by my friends. And i would like to share them with you here.</p>    
+
+    <hr class="mb-5 border">
+
+    <section class="section">
+        <div class="container">
+            <div class="content sm:flex items-center justify-center p-5">
+                <div class="w-full md:w-1/2">
+                    <figure class="w-full">
+                        <video class="basketball_vid" controls style="width: 75%; height: 50%;">
+                            <source src="images/basketball.mp4" type="video/mp4" />
+                        </video>
+                    </figure>
+                </div>
+                <div class="w-full md:w-1/2 mt-5">
+                    <h1 class="title header mb-4 text-2xl font-bold">Basketball</h1>
+                    <p class="mb-4">I have finished high school in St. Joseph School Addis Ababa. And as an SJS student,
+                        it is nearly impossible not to play basketball during your stay at the school. I started playing
+                        basketball while I joined the junior school and developed it throughout the whole high school
+                        years. Even though I don't have the average height of a basketball player, I really do enjoy
+                        playing the game. And it will always be one of my favorite hobbies.
+                    </p>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <img class="demera" src="images/demera.jpg" alt="Demera"/>
-        <img class="sculp" src="images/art.jpg" alt="Sculpture"/>
-        <img class="view1" src="images/view.jpg" alt="sunset"/>
-        <img class="view2" src="images/view2.jpg" alt="sunset"/>
-
-
-
-    </footer>
-
-
-    
-    
+    <section class="section footer">
+        <div class="container">
+            <div class="content sm:flex items-center justify-center p-5">
+                <div class="w-full md:w-1/2">
+                    <h1 class="title text-white mb-4 mt-5">Photography</h1>
+                    <p class="text-white mb-4">I love saving the moments in any way I can. Thankfully, photographs are
+                        by far the best method ever. Even though I'm not a professional photographer, I take some
+                        pictures that are sometimes found very pleasant by my friends. And I would like to share them
+                        with you here.
+                    </p>
+                </div>
+                <div class="w-full md:w-1/2 grid md:grid-col-4  gap-5 mt-5">
+                    <figure class="w-full">
+                        <img class="demera" src="images/demera.jpg" style="height: 250px; width: 200px;"
+                            alt="Demera" />
+                    </figure>
+                    <figure class="w-full">
+                        <img class="sculp" src="images/art.jpg" style="height: 250px; width: 200px;" alt="Sculpture" />
+                    </figure>
+                    <figure class="w-full">
+                        <img class="view1" src="images/view.jpg" style="height: 250px; width: 200px;" alt="sunset" />
+                    </figure>
+                    <figure class="w-full">
+                        <img class="view2" src="images/view2.jpg" style="height: 250px; width: 200px;" alt="sunset" />
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
