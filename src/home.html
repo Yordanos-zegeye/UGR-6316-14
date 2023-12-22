@@ -4,30 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    
+    <link rel="stylesheet" href="output.css">
+    <style>
+        .hero {
+            background: url(images/home.jpg) center / cover;
+        }
+        .button {
+            background-color: #a50a0a;
+        }
+       
+    </style>
+    <script>
+        function navToLink() {
+            let link = "about.html";
+            window.location.href = link;
+        }
+    </script>
 </head>
-<body>
-    <div class="imge">
-        <img src="images/home.jpg" />
-    </div>
-    
-    <div class="outer">
-        <div class="name">
-            <h1>YORDANOS ZEGEYE</h1>
-            <p>Hi, this is my personal website; and i hope you enjoy your stay here!</p>
-        </div>
-        <div class="quote">
-            <q>I know i not the best, but i certainly do know i will be one!</q>
+<body class="bg-gray-100"> 
 
+    <section class="hero h-screen flex items-center justify-center">
+
+        <div class="absolute top-40 text-center w-full">
+            <h1 class="text-4xl font-bold text-white">YORDANOS ZEGEYE</h1>
+            <p class="text-lg text-white">Hi, this is my personal website; and I hope you enjoy your stay here!</p>
+            <q class="text-white block">I know I'm not the best, but I certainly do know I will be one!</q>
         </div>
-        <div class="button">
-            <a href="about.html">
-                <button type="button">Read More</button>
-            </a>
-            
-        </div>
-    </div>
-    
-    
-    
+        <button class="button hover:bg-blue-200 text-white h-10 px-6 m-2 mt-4 top-11" onclick="navToLink()">Read More</button>
+
+    </section>
+
 </body>
 </html>
