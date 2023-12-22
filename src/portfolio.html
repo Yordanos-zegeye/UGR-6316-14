@@ -1,82 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+
+    <link rel="stylesheet" href="output.css">
+
+    <style>
+        .hero-head,.footer {
+            background-color: #a50a0a;
+        }
+
+
+        .header {
+            color: #a50a0a;
+        }
+
+    </style>
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="home.html" title="home">Home</a></li>
-                <li><a href="about.html" title="about">About</a></li>
-                <li><a href="blog.html" title="blog">Blog</a></li>
-                <li><a href="contact.html" title="contact">Contact</a></li>
-    
-            </ul>
-        </nav>
-        <h1>Portfolio</h1>
 
-    </header>
-    <main>
-        <h2 class="ed">Education</h2>
-        <ul>
-            <li>From kindergarten to 2<sup>nd</sup> grade in SOS school bahirdar</li>
-            <li>From 2<sup>nd</sup> grade until graduation St. Joseph School Addis Ababa</li>
-            <li>Graduated with a distinguishing grade of 4.0 GPA</li>
-            <li>Currently studying Software Engineering at AAiT </li>
-
-        </ul>
-    </main>
-    
-    <section class="achievements">
-        <h2>Achievements</h2>
-        <dl>
-            <dt>Certificates</dt>
-            <dd>Certificate of Merit for every semester at highschool.</dd>
-            <dd>Redhat certificate for successfuly completing the online course.</dd>
-            <dt>Languages</dt>
-            <dd>Amharic</dd>
-            <dd>English</dd>
-            <dt>Programming Languages </dt>
-            <dd>Python---<em>Intermediate</em></dd>
-            <dd>Java---<em>Beginner</em></dd>
-            <dd>SQL---<em>Beginner</em></dd>
-            <dd>HTML---<em>Beginner</em></dd>
-            <dd>CSS---<em>Begineer</em></dd>
-        </dl>
-        
-
-    </section>
-    <aside>
-        <ul>
-            <li><a href="images/Yordanos_Resume.pdf">Resume</a></li>
-            <li><a href="https://www.linkedin.com/in/yordanos-zegeye-a42689203/">Linkedin</a></li>
-        </ul>
-    </aside>
-    <hr />
-    <section>
-        <h2>Online cources</h2>
-        <figure class="vm1">
-            <img class="vm_img1" src="images/vmware_cert.1.jpg" alt="Cloud and Virtualization Concepts"/>
-            <figcaption><a href="https://www.credly.com/badges/1e7de38a-e7e0-499a-867e-4a2a7336fe70/public_url">Cloud and Virtualization Concepts</a></figcaption>
+<body class="font-sans">
+    <div class="hero-head shadow-md">
+        <div class="flex items-center justify-between p-5">
+            <div>
+                <h1 class="text-white text-2xl">Portfolio</h1>
+            </div>
+            <div class="flex">
+                <a href="home.html" class="text-decoration-line: underline hover:text-blue-400 text-white">Home</a>
+                <a href="about.html" class="text-decoration-line: underline hover:text-blue-400 text-white ml-4">About Me</a>
+                <a href="blog.html" class="text-decoration-line: underline hover:text-blue-400 text-white ml-4">Blog</a>
+                <a href="contact.html" class="text-decoration-line: underline hover:text-blue-400 text-white ml-4">Contact</a>
+            </div>
             
-        </figure>
-        <figure class="vm2">
-            <img class="vm_img2" src="images/vmware_cert.2.jpg" alt="Network Virtualization Concepts"/>
-            <figcaption><a href="https://www.credly.com/badges/cb8210a1-446a-47f2-ad22-941148e52007/public_url">Network Virtualization Concepts</a>
-            </figcaption>
-
-        </figure>
-        <figure class="vm3">
-            <img class="vm_img3" src="images/vmware_cert.3.jpg" alt="Software Defined Storge Concepts"/>
-            <figcaption><a href="https://www.credly.com/badges/2d7e2b10-576c-4041-9727-5bcb96c665c4/public_url">Software Defined Storge Concepts</a></figcaption>
-        </figure>
+        </div>
+    </div>
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-5">
+                <div class="ed items-center">
+                    <h1 class="text-2xl header">Education</h1>
+                    <ul>
+                        <li>From kindergarten to 2<sup>nd</sup> grade in SOS school bahirdar</li>
+                        <li>From 2<sup>nd</sup> grade until graduation St. Joseph School Addis Ababa</li>
+                        <li>Graduated with a distinguishing grade of 4.0 GPA</li>
+                        <li>Currently studying Software Engineering at AAiT </li>
+                    </ul>
+                </div>
+                <div class="md:col-span-1 items-center">
+                    <h1 class="text-2xl header">Achievements</h1>
+                    <dl>
+                        <dt class="text-lg font-semibold">Certificates</dt>
+                        <dd>Certificate of Merit for every semester at high school.</dd>
+                        <dd>Redhat certificate for successfully completing the online course.</dd>
+                        <dt class="text-lg font-semibold">Languages</dt>
+                        <dd>Amharic</dd>
+                        <dd>English</dd>
+                        <dt class="text-lg font-semibold">Programming Languages </dt>
+                        <dd>Python---<em>Intermediate</em></dd>
+                        <dd>Java---<em>Beginner</em></dd>
+                        <dd>SQL---<em>Beginner</em></dd>
+                        <dd>HTML---<em>Beginner</em></dd>
+                        <dd>CSS---<em>Begineer</em></dd>
+                    </dl>
+                </div>
+                <div class=" aside self-center bg-red-100 md:bg-white text-blue-900 md:col-span-1 items-center">
+                    <ul>
+                        <li><a href="images/Yordanos_Resume.pdf">Resume</a></li>
+                        <li><a href="https://www.linkedin.com/in/yordanos-zegeye-a42689203/">Linkedin</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
-    <hr />
-    <footer>
-        <span>&copy; Copyright 2023 Yordanos's Portfolio Page </span>
-    </footer>
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-5">
+                <div>
+                    <figure class="flex items-center ">
+                        <img class="w-32 h-32" src="images/vmware_cert.1.jpg" alt="Cloud and Virtualization Concepts" />
+                        <figcaption class="ml-2 text-blue-900">
+                            <a href="https://www.credly.com/badges/1e7de38a-e7e0-499a-867e-4a2a7336fe70/public_url">Cloud
+                                and Virtualization Concepts</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure class="flex items-center">
+                        <img class="w-32 h-32" src="images/vmware_cert.2.jpg" alt="Network Virtualization Concepts" />
+                        <figcaption class="ml-2 text-blue-900">
+                            <a href="https://www.credly.com/badges/cb8210a1-446a-47f2-ad22-941148e52007/public_url">Network
+                                Virtualization Concepts</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure class="flex items-center">
+                        <img class="w-32 h-32" src="images/vmware_cert.3.jpg" alt="Software Defined Storge Concepts" />
+                        <figcaption class="ml-2 text-blue-900">
+                            <a href="https://www.credly.com/badges/2d7e2b10-576c-4041-9727-5bcb96c665c4/public_url">Software
+                                Defined Storage Concepts</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section footer bg-red-600 text-white mt-5 ">
+        <div class="container text-center">
+            <span>&copy; Copyright 2023 Yordanos's Portfolio Page </span>
+        </div>
+    </section>
+
 </body>
+
 </html>
