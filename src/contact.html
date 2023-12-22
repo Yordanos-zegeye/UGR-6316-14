@@ -1,44 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <h1>Contacts</h1>
-
-    </header>
-    <div class="address">
-        <h2>Address</h2>
-        <ul>
-            <li>Email: <a href="mailto:yordanoszegeye24@gmail.com">yordanoszegeye24@gmail.com</a> </li>
-            <li>Tel: <a href="#">0970415771</a></li>
-            <li><a href="https://github.com/Yordanos-zegeye">Github</a></li>
-        </ul>
-
-    </div>
-    <div class="social">
-        <h2>Social</h2>
-        <ul>
-            <li><a href="https://www.instagram.com/jordanzeg/">Instagram</a></li>
-            <li><a href="https://www.facebook.com/jordanzeg/">Facebook</a></li>
-        </ul>
-
-
-    </div>
-    <hr />
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="home.html" title="home">Home</a></li>
-                <li><a href="about.html" title="about">About</a></li>
-                <li><a href="portfolio.html" title="portfolio">Portfolio</a></li>
-                <li><a href="blog.html" title="blog">Blog</a></li>
+    <title>Contacts</title>
     
-            </ul>
-        </nav>
-    </footer>
+    <link rel="stylesheet" href="output.css">
+    <style>
+        .hero,.footer {
+            background-color: #a50a0a;
+
+        }
+        .header {
+            color: #a50a0a;
+        }
+        
+    </style>
+
+</head>
+
+<body class="font-sans">
+    <section class="hero bg-red-600">
+        <div class="hero-head justify-center">
+            <h1 class="text-white text-center text-2xl">Contacts</h1>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 m-5">
+                <div class="md:col-span-1">
+                    <h1 class="text-2xl header">Address</h1>
+                    <ul>
+                        <li>Email: <a href="mailto:yordanoszegeye24@gmail.com"
+                                class="text-blue-500 hover:underline">yordanoszegeye24@gmail.com</a> </li>
+                        <li>Tel: <a href="#" class="text-blue-500 hover:underline">0970415771</a></li>
+                        <li><a href="https://github.com/Yordanos-zegeye" class="text-blue-500 hover:underline">Github</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="md:col-span-1">
+                    <h1 class="text-2xl header">Social</h1>
+                    <ul>
+                        <li><a href="https://www.instagram.com/jordanzeg/" class="text-blue-500 hover:underline">Instagram</a>
+                        </li>
+                        <li><a href="https://www.facebook.com/jordanzeg/" class="text-blue-500 hover:underline">Facebook</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section footer">
+        <div class="container">
+            <nav class="hero-body">
+                <div class="grid grid-cols-1 md:grid-cols-2 ">
+                    <div class="md:col-span-2 mr-5 text-end">
+                        <a href="home.html" class="text-decoration-line: underline hover:text-blue-200 text-white">Home</a>
+                        <a href="about.html" class="text-decoration-line: underline hover:text-blue-200 text-white ml-4">About Me</a>
+                        <a href="portfolio.html" class="text-decoration-line: underline hover:text-blue-200 text-white ml-4">Portfolio</a>
+                        <a href="blog.html" class="text-decoration-line: underline hover:text-blue-200 text-white ml-4">Blog</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+
 </body>
+
 </html>
