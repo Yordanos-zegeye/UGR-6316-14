@@ -4,41 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../assets/main.css">
+    <style>
+        .nav-link:hover{
+            text-decoration: none !important;
+            color: #2980b9 !important;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Contacts</h1>
-
-    </header>
-    <div class="address">
-        <h2>Address</h2>
-        <ul>
-            <li>Email: <a href="mailto:yordanoszegeye24@gmail.com">yordanoszegeye24@gmail.com</a> </li>
-            <li>Tel: <a href="#">0970415771</a></li>
-            <li><a href="https://github.com/Yordanos-zegeye">Github</a></li>
-        </ul>
-
+    <div class="container-fluid text-center bg-primary shadow">
+        <h1 class=" h1 text-white">Contacts</h1>
     </div>
-    <div class="social">
-        <h2>Social</h2>
-        <ul>
-            <li><a href="https://www.instagram.com/jordanzeg/">Instagram</a></li>
-            <li><a href="https://www.facebook.com/jordanzeg/">Facebook</a></li>
-        </ul>
-
-
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h1 class="h1 text-primary">Address</h1>
+                    <ul>
+                        <li>Email: <a href="mailto:yordanoszegeye24@gmail.com"
+                                class="text-blue-500 hover:underline">yordanoszegeye24@gmail.com</a> </li>
+                        <li>Tel: <a href="#" class="text-blue-500 hover:underline">0970415771</a></li>
+                        <li><a href="https://github.com/Yordanos-zegeye" class="text-blue-500 hover:underline">Github</a>
+                        </li>
+                    </ul>
+            </div>
+            <div class="col-sm-6 border-start border-3 border-primary">
+                <h1 class="h1 text-primary">Social</h1>
+                <ul>
+                    <li><a href="https://www.instagram.com/jordanzeg/" class="text-blue-500 hover:underline">Instagram</a>
+                    </li>
+                    <li><a href="https://www.facebook.com/jordanzeg/" class="text-blue-500 hover:underline">Facebook</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <hr />
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="home.html" title="home">Home</a></li>
-                <li><a href="about.html" title="about">About</a></li>
-                <li><a href="portfolio.html" title="portfolio">Portfolio</a></li>
-                <li><a href="blog.html" title="blog">Blog</a></li>
-    
-            </ul>
+    <div class="container-fluid bg-primary">
+        <nav class="navbar bg-primary shadow align-items-end navbar-expand">
+            <div class="container justify-content-end">
+                <ul class="navbar-nav">
+                    <li class="nav-item "><a href="home.html" class="nav-link text-white text-decoration-underline ">Home</a></li>
+                    <li class="nav-item "><a href="about.html" class="nav-link text-white text-decoration-underline">About Me</a></li>
+                    <li class="nav-item "><a href="portfolio.html" class="nav-link text-white text-decoration-underline">Portfolio</a></li>
+                    <li class="nav-item "><a href="blog.html" class="nav-link text-white text-decoration-underline">Blog</a></li>
+        
+                </ul>
+            </div>
         </nav>
-    </footer>
+    </div>
 </body>
 </html>
